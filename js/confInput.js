@@ -125,7 +125,7 @@ angular.module('myApp', []).controller("myController", function($scope,$http){
             function onSuccess(response) {
                 console.log(response);
                 sessionStorage.setItem("currentConf", response.data.response.id);
-                document.location.href = "../../events/card";
+                document.location.href = "../../events/card.html";
             }).catch(function onError(response) {
             console.log(response);
         });

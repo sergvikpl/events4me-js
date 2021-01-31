@@ -122,7 +122,6 @@ function searchConf() {
 function gotoEvent() {
     $("#tableEvents .evBox").click(function () {
         sessionStorage.setItem('currentConf', this.id);
-        document.location.href = "./events/card";
+        document.location.href = "./events/card.html";
     });
 }
-

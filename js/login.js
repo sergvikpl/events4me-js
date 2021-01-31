@@ -9,7 +9,7 @@ $(document).ready(function () {
 		var email = document.getElementById('inputName').value;
 		var password = document.getElementById('password').value;
 		$.ajax({
-			url: hostUrl + '/authorization/login',
+			url: address + '/authorization/login',
 			type: "POST",
 			data:JSON.stringify({
         'email': email,
@@ -34,7 +34,7 @@ $(document).ready(function () {
 				setCookie('phone', data.phone_number);
 				setCookie('id', data.user_id);
 
-				document.location.href = "./events";
+				document.location.href = "./events.html";
 			},
 			error:function(data){
 				console.log(data);

@@ -17,7 +17,7 @@ $(document).ready(function () {
 			}else{
 				empOnlyText = "";
 			}
-			$('#confInfo').append("<div class = 'topConfBlock'><h2 class = 'nameConf'>" + resault.name +"</h2><a href = 'card/edit'><img src='../img/edit.png' width=40px></a></div>" +
+			$('#confInfo').append("<div class = 'topConfBlock'><h2 class = 'nameConf'>" + resault.name +"</h2><a href = 'card/edit.html'><img src='../img/edit.png' width=40px></a></div>" +
 				"<div class='inner background-light'><h3>Описание:</h3><h4 class = 'shortDesc'>" +
                 resault.description+"</h4><p class = 'description'>" +
                 resault.overview + "</p></div>" +
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
 	$("#showUsers").on("click",function () {
 		// $.ajax({
-		document.location.href = "./events/card/users";
+		document.location.href = "./events/card/users.html";
 
 		//  });
 
@@ -64,4 +64,3 @@ $(document).ready(function () {
 
 
 })
-

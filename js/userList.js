@@ -36,7 +36,7 @@ $(document).ready(function () {
             }
             $("#tableUsers .uBox").click(function () {
                 sessionStorage.setItem('user_id', this.id);
-                document.location.href = "./users/user";
+                document.location.href = "./users/user.html";
             });
         },
         error: function (data) {
