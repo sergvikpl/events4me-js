@@ -1,10 +1,7 @@
 body {
   /*font-family: Roboto;*/
 }
-.navigation li:nth-child(n) {
-    padding: 15px 22px 14px 22px;
-}
-.userList li:nth-child(5) {
+.userList li:nth-child(4) {
   background-color: #EA4101;
 }
 .input-group {
@@ -22,7 +19,7 @@ body {
   .btn-search:active, .btn-search:hover {
   }
 .topUserList {
-  
+
   margin: 30px auto;
   font-weight: 300;
   font-size: 40px;
@@ -49,11 +46,11 @@ body {
   vertical-align: middle;
   display: inline-block;
   margin-left: 20px;
-  margin-top: 20px; 
+  margin-top: 20px;
   width: 100px;
 }
 .userName {
-  
+
   vertical-align: middle;
   display: inline-block;
 
@@ -129,7 +126,7 @@ vertical-align: middle;
 }
 
 @media (max-width: 935px) {
-    .navigation li:nth-child(n) {
+    .navigation li:nth-child(n) a {
         padding: 15px 6px 14px 6px;
     }
 

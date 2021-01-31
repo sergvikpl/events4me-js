@@ -7,9 +7,6 @@ body {
 	width: 80%;
 	margin: 30px auto 34px;
 }
-.navigation li:nth-child(n) {
-	padding: 14px 22px 14px 22px;
-}
 .boxLine {
 	display: block;
 	text-align: left;

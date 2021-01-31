@@ -1,7 +1,5 @@
-.navigation li:nth-child(3) {
-		position: relative;
-		padding: 14px 21px 15px 22px; 
-		background-color: #EA4101;
+.navigation li:nth-child(4) {
+	background-color: #EA4101;
 }
 
 form {
@@ -14,14 +12,15 @@ form {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 34px;
-	
+
 	text-align: center;
 }
 .boxForm {
 	display: block;
 	text-align: center;
-	width: 380px;
+	max-width: 380px;
 	margin: 0 auto;
+	padding: 0 16px;
 }
 
 
@@ -30,7 +29,8 @@ form {
 	display: block;
 	box-sizing: border-box;
 	border-radius: 6px;
-	width: 380px;
+	width: 100%;
+	max-width: 380px;
 	height: 50px;
 	margin-bottom: 30px;
 	border: 2px solid #92CBC5;
@@ -78,14 +78,14 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 
 	align-items: center;
 	text-decoration-line: underline;
-	
+
 	/* violet */
 
 	color: #3F4F98;
 }
 .saveMe {
 	display: inline-block;
-	margin-bottom: 0px; 	
+	margin-bottom: 0px;
 }
 .saveMe a{
 	margin-left: 20px;
@@ -98,13 +98,15 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 }
 #save:hover {
 	border: 2px solid #EA4101;
+	transition: all 0.2s linear;
 }
 
 #check:hover, #inputName:hover, #password:hover {
 	border: 2px solid #EA4101;
+	transition: all 0.2s linear;
 }
 #inputName:focus, #password:focus {
-	padding-left: 26.1px; 
+	padding-left: 26.1px;
 	background: white;
 }
 #check:checked {
@@ -138,7 +140,8 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 	font-family: Roboto;
 	font-style: normal;
 	text-align: center;
-	width: 380px;
+	width: 100%;
+	max-width: 380px;
 	margin: 0 auto;
 }
 

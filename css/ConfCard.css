@@ -11,10 +11,7 @@ body {
 	float: right;
 	vertical-align: middle;
 }
-.navigation li:nth-child(n) {
-	padding: 14px 22px 14px 22px;
-}
-.navigation li:nth-child(4) {
+.navigation li:nth-child(3) {
 	background-color: #EA4101;
 }
 
@@ -145,7 +142,7 @@ body {
 }
 
 @media (max-width: 935px) {
-	.navigation li:nth-child(n) {
+	.navigation li:nth-child(n) a {
 		padding: 15px 6px 14px 6px;
 	}
 
@@ -153,4 +150,3 @@ body {
 		font-size: 15px;
 	}
 }
-

@@ -8,12 +8,10 @@ margin-bottom: 89.13px;
 	vertical-align: middle;
 	display: inline-block;
 }
-.navigation li:nth-child(n) {
-	padding: 15px 22px 14px 22px;
-}
+
 .info1 {
 	margin-left: 100px;
-	margin-right: 100px; 
+	margin-right: 100px;
 }
 .nameAcc {
 	font-family: Roboto;
