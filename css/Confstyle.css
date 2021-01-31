@@ -1,0 +1,272 @@
+.conference li:nth-child(2) {
+	background-color: #EA4101;
+}
+
+.timestamp{
+	display: none;
+}
+
+.search {
+	width: 80%;
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+}
+.blocks {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20%;
+}
+.input-group {
+	width: 400px;
+
+	/*border: 2px solid #92CBC5;*/
+	border-radius: 6px;
+}
+.btn-search {
+	/*background: #92CBC5;*/
+	background: #337ab7;
+	color: #fff;
+}
+
+.search a {
+	cursor: pointer;
+	margin-left: 22px;
+	display: inline-block;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+
+	text-decoration-line: underline;
+	color: #3F4F98;
+}
+
+.conteiner {
+	padding: 33px 10px 0px 10px;
+	text-align: center;
+}
+.confBox, .confBoxNew{
+	cursor: pointer;
+	vertical-align: top;
+	margin: 8.5px 10px 8.5px 10px;
+	text-align: left;
+	width: 380px;
+	height: 471px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+
+	display: inline-block;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
+
+}
+.confBox:hover .trash {
+	opacity: 1;
+}
+#bannerConf{
+	width: 380px;
+	height: 200px;
+	/*height: auto;*/
+}
+
+.confBoxNew h3{
+	width: 340px;
+	height: 50.11px;
+	margin: 20px 20.04px;
+	color:  #EA4101;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.confBox h4, .nameOrg h5 {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0px 20px;
+	color: #333333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.dateConf h4 {
+	margin: 0px 17px;
+}
+.org img {
+	width: 60px;
+	height: 60.13px;
+}
+/*#idConference {
+	display: none;
+}*/
+
+
+.timestamp{
+	display: none;
+}
+.map {
+
+	margin:20.77px 0px 21.66px 20px;
+}
+.map a {
+	width: 320px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+	color: #3F4F98;
+}
+.map acronym {
+	text-decoration: none;
+}
+.map img {
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 20px;
+}
+.org {
+	display: block;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.org img{
+	vertical-align: middle;
+	display: inline-block;
+}
+.nameOrg h4{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.nameOrg {
+	width: 280px;
+
+	height: 60.13px;
+	vertical-align: middle;
+	display: inline-block;
+
+}
+/*button Up*/
+#toTop {
+	width: 56px;
+	height: 60px;
+	background: #EA4101;
+	border-radius: 18px 0px 0px 18px;
+	position:fixed;
+	right: 0;
+	top: 80%;
+	cursor:pointer;
+	margin: 0px auto;
+	text-align: center;
+}
+#toTop img {
+	margin-top: 39%;
+}
+
+
+.topConf {
+	display: block;
+}
+.trash {
+	opacity: 0;
+	vertical-align: top;
+}
+.topConf {
+	margin: 20px 0 20px 20px;
+}
+.confBox h3 {
+	display: inline-block;
+	/*width: 340px;*/
+	width: 90%;
+	margin: 0 0 0 0;
+	height: 50.11px;
+	/*	margin: 20px 20.04px;*/
+	color:  #EA4101;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.eventsList{
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+/*===============TABLE================*/
+
+#tableEvents th{
+	background-color: #3F4F98;
+	color: #fff;
+	height: 60px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#tableEvents tr{
+
+}
+
+#tableEvents tr:hover{
+	background-color: #ccdeec;
+	cursor: pointer;
+}
+
+.trashConf {
+	opacity: 0;
+	vertical-align: top;
+	float: right;
+}
+
+#tableEvents tr:hover .trashConf {
+	opacity: 1;
+}
+
+.btnTop{
+	padding-left: 85px;
+}
+
+.btnConf{
+	margin-bottom: 20px;
+	padding: 16px 30px;
+	border-radius: 0;
+}
+
+.btn-search:hover, .btn-search:focus, .btn-search:active {
+	/*background: #92CBC5;*/
+	color: #fff;
+}
+
+.btn-search:disabled{
+	cursor: default;
+}
+
+.navigation li:nth-child(n) {
+	padding: 14px 22px 15px 22px;
+}
+
+@media (max-width: 820px){
+	.headText{
+		font-size: 30px;
+		width: 700px;
+	}
+}
+
+@media (max-width: 670px){
+	.headText{
+		font-size: 26px;
+		width: 530px;
+	}
+}
