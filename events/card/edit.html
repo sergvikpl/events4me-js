@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=38ba0756-4142-41c3-925c-5151cc077bec" type="text/javascript"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" type="text/javascript"></script>
+
+  	<title>
+  		Events4me
+  	</title>
+  	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+  	<link rel="stylesheet" href="../../css/style.css">
+  	<link rel="stylesheet" href="../../css/confCardInput.css">
+  	<link rel="stylesheet" href="../../css/bootstrap-grid.css">
+  </head>
+  <body>
+    <heder>
+    	<div class="top">
+    		<a href=""><img src="../../img/Group.png" alt=""></a>
+    		<a href="https://apps.apple.com/us/app/%D0%BC%D0%BE%D0%B8-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/id1463771812?l=ru&ls=1"
+    		   target="_blank"><img src="../../img/appstore2.png" alt='AppStore'></a>
+    		<a class="app_icons" href="https://play.google.com/store/apps/details?id=ru.spb.iac.events4me" target="_blank"><img
+    				src="../../img/ggplay.png" alt="GooglePlay"></a>
+    	</div>
+    	<div class = 'head'>
+    		<!--<img src="./src/banner-main.png" alt="">-->
+    		<div class = 'testImg'></div>
+    		<div class="headText">Мои события: конференции и интересные события в Санкт-Петербурге</div>
+    	</div>
+    	<nav class="navigation conference">
+    		<ul>
+    			<li><a href="../../profile.html">- Главная -</a></li>
+    			<li><a href="../../events.html">- Все конференции -</a></li>
+    			<li><a class="outLogin" href="../../login.html">- Выход -</a></li>
+    		</ul>
+    	</nav>
+    </heder>
+    <form class='confInfo' ng-controller='myController'>
+
+    	<div class="row">
+    		<div class="col-md-12">
+    			<div class="col-lg-6 col-md-12 text-left">
+    				<div class="form-group">
+    					<label for="nameConf">Название конференции:</label>
+    					<input type="text" class="form-control" id="nameConf" maxlength="145">
+    				</div>
+    				<div class="form-group">
+    					<label for="shortDesc">Краткое описание:</label>
+    					<input type="text" class="form-control" id="shortDesc" maxlength="256">
+    				</div>
+    				<div class="form-group">
+    					<label for="description">Описание:</label>
+    					<textarea class="form-control" id="description" rows="7" maxlength="1000"></textarea>
+    				</div>
+    			</div>
+    			<div class="col-lg-6 col-md-12 text-left">
+    				<div class='form-group organization' id = "organization">
+    					<label for="orgSelect">Организатор</label>
+    					<select id="orgSelect" name="orgSelect" class="form-control org-select">
+    						<option>Не выбрано</option>
+    					</select>
+    					<img src="../../img/foto.png" id="orgLogo" alt="fotoOrg">
+    					<h4 id="urlOrg"></h4>
+
+    					<!--<input type='checkbox' id='employee' name=''>-->
+    					<!--<label>Только для работников</label>-->
+
+    					<div class="cntr">
+    						<label for="employee" class="label-employee">
+    							<input  type="checkbox" id='employee' class="invisible">
+    							<div class="checkbox">
+    								<svg width="20px" height="20px" viewBox="0 0 20 20">
+    									<path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+    									<polyline points="4 11 8 15 16 6"></polyline>
+    								</svg>
+    							</div>
+    							<span>Только для работников</span>
+    						</label>
+    					</div>
+
+    				</div>
+    			</div>
+    		</div>
+    		<div class="col-md-12">
+    			<div class="changeInfo col-lg-6 col-md-12 text-left">
+    				<div class='time'>
+    					<img id="confPhoto" src="../../img/conf.png">
+    					<input type="file" id="fileSend" >
+    					<div class="row">
+    						<div class="col-md-12">
+    							<div class="dateStart mt20 form-group">
+    								<h4>Начало коференции:</h4>
+    								<div class="col-lg-6 col-md-12">
+    									<label for="dateStart">Дата:</label>
+    									<input type="date" class="form-control" required id="dateStart">
+    								</div>
+    								<div class="col-lg-6 col-md-12">
+    									<label for="timeStart">Время:</label>
+    									<input type="time" class="form-control" required id="timeStart">
+    								</div>
+    							</div>
+    						</div>
+    						<div class="col-md-12">
+    							<div class="dateEnd mt20 form-group">
+    								<h4>Конец коференции:</h4>
+    								<div class="col-lg-6 col-md-12">
+    									<label for="dateEnd">Дата:</label>
+    									<input type="date" class="form-control" required id="dateEnd">
+    								</div>
+    								<div class="col-lg-6 col-md-12">
+    									<label for="timeEnd">Время:</label>
+    									<input type="time" class="form-control" required id="timeEnd">
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+
+
+    				</div>
+    			</div>
+    			<div class="col-lg-6 col-md-12 text-left" id="container">
+    				<div class='address' id="subcontainer">
+
+    					<label>Адрес:</label>
+    					<div id="map"></div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="col-md-12 mar-btn">
+    			<button id='save' ng-click='saveForm()'>Сохранить</button>
+    		</div>
+    	</div>
+
+
+    </form>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"> </script>
+    <script src="../../js/date.js"> </script>
+    <script src = "../../js/functions.js" type="text/javascript" ></script>
+    <script type="text/javascript" src="../../js/confInput.js"></script>
+    <script type="text/javascript" src="../../js/config.js"></script>
+    <script type="text/javascript" src="../../js/mapInput.js"></script>
+    <footer>
+    	<div class = 'foot'>
+    		<img src="../../img/GroupWhite.png" alt="GroupWhite">
+    		<div class = 'border'></div>
+    		<div class = 'author'>Дизайн,<br> разработка<br> и техническая поддержка ресурса: <div class="iac">IAC Mobile Dev Group</div></div>
+    	</div>
+    </footer>
+  </body>
+</html>
