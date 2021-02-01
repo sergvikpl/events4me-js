@@ -231,17 +231,3 @@ textarea.description {
 		position: absolute;
 	}
 }
-
-@media (max-width: 820px){
-	.headText{
-		font-size: 30px;
-		width: 700px;
-	}
-}
-
-@media (max-width: 670px){
-	.headText{
-		font-size: 26px;
-		width: 530px;
-	}
-}

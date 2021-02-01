@@ -54,6 +54,7 @@ body {
 	align-items: center;
 	white-space: normal;
 	word-break: break-word;
+	padding-right: 16px;
 }
 
 .navigation {
@@ -89,6 +90,18 @@ body {
 	white-space: normal;
 	word-break: break-word;
   padding: 16px 22px 14px 22px;
+}
+
+.navigation a > i {
+	display: none;
+}
+@media (max-width: 600px) {
+	.navigation a > i {
+		display: inline-block;
+	}
+	.navigation a > span {
+		display: none;
+	}
 }
 
 .index li:nth-child(1) {

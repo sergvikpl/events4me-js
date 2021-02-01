@@ -68,19 +68,16 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 .saving {
 	text-align: left;
 }
-.login a , span{
+.login a, .login span {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
 	/* or 150% */
-
 	align-items: center;
 	text-decoration-line: underline;
-
 	/* violet */
-
 	color: #3F4F98;
 }
 .saveMe {

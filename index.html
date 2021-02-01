@@ -1,76 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Events4me</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./js/functions.js" type="text/javascript"></script>
-    <script src="./js/index.js" type="text/javascript"></script>
-    <script src="./js/config.js" type="text/javascript"></script>
+    <head>
+        <meta charset="utf-8">
+        <title>Events4me</title>
 
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <heder>
-        <div class="top">
-            <a href=""><img src="./img/Group.png" alt=""></a>
-            <a href="https://apps.apple.com/us/app/%D0%BC%D0%BE%D0%B8-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/id1463771812?l=ru&ls=1"
-               target="_blank"><img src="./img/appstore2.png" alt='AppStore'></a>
-            <a class="app_icons" href="https://play.google.com/store/apps/details?id=ru.spb.iac.events4me" target="_blank"><img
-                    src="./img/ggplay.png" alt="GooglePlay"></a>
-        </div>
-        <div class='head'>
-            <div class='testImg'></div>
-            <div class="headText">Мои события: конференции и интересные события в Санкт-Петербурге</div>
-        </div>
-        <nav class="navigation index">
-            <ul>
-                <li><a href="index.html">- Главная -</a></li>
-                <li><a href="agreement.html">- Соглашение -</a></li>
-                <div class="cap"></div>
-                <li><a href="login.html">- Авторизация -</a></li>
-            </ul>
-        </nav>
-    </heder>
-    <div id="content">
-        <div class="index">
-            <h2>Мобильное приложение "Мои события":</h2>
-            <div class="boxes">
-                <div class='box' id="1">
-                    <img src="./img/Frame1.png" alt="">
-                    <p>Позволяет просматривать текущие конференции и интересные события, происходящие в
-                        Санкт-Петербурге.</p>
-                </div>
-                <div class='box' id="2">
-                    <img src="./img/Frame2.png" alt="">
-                    <p>В приложении доступна запись на конференции</p>
-                </div>
-                <div class='box' id="3">
-                    <img src="./img/Frame3.png" alt="">
-                    <p>Просмотр списка докладчиков и списка докладов</p>
-                </div>
-                <div class='box' id="4">
-                    <img src="./img/Frame4.png" alt="">
-                    <p>Уведомления о записи на конференцию по почте</p>
-                </div>
-            </div>
-            <div class='add'>
-                <h2>Скачайте официальное приложение на ваше устройство: </h2>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="./js/functions.js" type="text/javascript"></script>
+        <script src="./js/index.js" type="text/javascript"></script>
+        <script src="./js/config.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <heder>
+            <div class="top">
+                <a href=""><img src="./img/Group.png" alt=""></a>
                 <a href="https://apps.apple.com/us/app/%D0%BC%D0%BE%D0%B8-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/id1463771812?l=ru&ls=1"
-                   target="_blank"><img src="./img/AppStore.png" alt='AppStore'/></a>
-                <a href="https://play.google.com/store/apps/details?id=ru.spb.iac.events4me" target="_blank"><img
-                        src="./img/GooglePlay.png" alt="GooglePlay"/></a>
+                   target="_blank"><img src="./img/appstore2.png" alt='AppStore'></a>
+                <a class="app_icons" href="https://play.google.com/store/apps/details?id=ru.spb.iac.events4me" target="_blank"><img
+                        src="./img/ggplay.png" alt="GooglePlay"></a>
+            </div>
+            <div class='head'>
+                <div class='testImg'></div>
+                <div class="headText">Мои события: конференции и интересные события в Санкт-Петербурге</div>
+            </div>
+            <nav class="navigation index">
+              <ul>
+                  <li><a href="index.html">
+                      <i class="fas fa-home"></i>
+                      <span>- Главная -</span>
+                  </a></li>
+                  <li><a href="agreement.html">
+                      <i class="fas fa-handshake"></i>
+                      <span>- Соглашение -</span>
+                  </a></li>
+                  <div class="cap"></div>
+                  <li><a href="login.html">
+                      <i class="fas fa-sign-in-alt"></i>
+                      <span>- Авторизация -</span>
+                  </a></li>
+              </ul>
+            </nav>
+        </heder>
+        <div id="content">
+            <div class="index">
+                <h2>Мобильное приложение "Мои события":</h2>
+                <div class="boxes">
+                    <div class='box' id="1">
+                        <img src="./img/Frame1.png" alt="">
+                        <p>Позволяет просматривать текущие конференции и интересные события, происходящие в
+                            Санкт-Петербурге.</p>
+                    </div>
+                    <div class='box' id="2">
+                        <img src="./img/Frame2.png" alt="">
+                        <p>В приложении доступна запись на конференции</p>
+                    </div>
+                    <div class='box' id="3">
+                        <img src="./img/Frame3.png" alt="">
+                        <p>Просмотр списка докладчиков и списка докладов</p>
+                    </div>
+                    <div class='box' id="4">
+                        <img src="./img/Frame4.png" alt="">
+                        <p>Уведомления о записи на конференцию по почте</p>
+                    </div>
+                </div>
+                <div class='add'>
+                    <h2>Скачайте официальное приложение на ваше устройство: </h2>
+                    <a href="https://apps.apple.com/us/app/%D0%BC%D0%BE%D0%B8-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/id1463771812?l=ru&ls=1"
+                       target="_blank"><img src="./img/AppStore.png" alt='AppStore'/></a>
+                    <a href="https://play.google.com/store/apps/details?id=ru.spb.iac.events4me" target="_blank"><img
+                            src="./img/GooglePlay.png" alt="GooglePlay"/></a>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class='foot'>
-            <img src="./img/GroupWhite.png" alt="GroupWhite">
-            <div class='border'></div>
-            <div class='author'>Дизайн,<br> разработка<br> и техническая поддержка ресурса:
-                <div class="iac">IAC Mobile Dev Group</div>
+        <footer>
+            <div class='foot'>
+                <img src="./img/GroupWhite.png" alt="GroupWhite">
+                <div class='border'></div>
+                <div class='author'>Дизайн,<br> разработка<br> и техническая поддержка ресурса:
+                    <div class="iac">IAC Mobile Dev Group</div>
+                </div>
             </div>
-        </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>

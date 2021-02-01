@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-	$('#dataInput').append('<div class = "data"><div class="fotoAvatar"><img alt="photo.png" id="photoUser"></div><div class="info1"><div class="nameAcc">Фамилия:<div class="infoAcc">' +
+	$('#dataInput').append('<div class="data"><div class="fotoAvatar"><img alt="photo.png" id="photoUser"></div><div class="info1"><div class="nameAcc">Фамилия:<div class="infoAcc">' +
 		getCookie('last_name') + '</div></div><div class="nameAcc">Имя:<div class="infoAcc">' + getCookie('first_name') + '</div></div><div class="nameAcc">Отчество:<div class="infoAcc">' +
-		getCookie('middle_name') +'</div></div></div><div class = "info2"><div class="nameAcc">Тип аккаунта:<div class="infoAcc">'+
+		getCookie('middle_name') +'</div></div></div><div class="info2"><div class="nameAcc">Тип аккаунта:<div class="infoAcc">'+
 		getCookie('authorities') + '</div></div><div class="nameAcc">Телефон<div class="infoAcc">'+
 		getCookie('phone') +'</div></div><div class="nameAcc">email:<div class="infoAcc">'+getCookie('email')+'</div></div></div></div>');
 	$(function () {

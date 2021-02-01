@@ -111,21 +111,7 @@ vertical-align: middle;
     text-align: center;
 }
 
-@media (max-width: 820px){
-    .headText{
-        font-size: 30px;
-        width: 700px;
-    }
-}
-
-@media (max-width: 670px){
-    .headText{
-        font-size: 26px;
-        width: 530px;
-    }
-}
-
-@media (max-width: 935px) {
+@media (max-width: 935px) and (min-width: 600px) {
     .navigation li:nth-child(n) a {
         padding: 15px 6px 14px 6px;
     }
