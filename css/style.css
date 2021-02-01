@@ -119,15 +119,25 @@ body {
 	margin-right: 5px;
 }
 
-.index h2  {
-	margin-top: 60px;
-	margin-bottom: 0px;
+.index h2 {
+	text-align: center;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 34px;
-	text-align: center;
+	margin-bottom: 20px;
+  padding: 0px 16px;
+}
+.index h2:nth-child(1) {
+	margin-top: 60px;
+}
+
+@media (orientation: portrait) and (max-width: 480px), (orientation: landscape) and (max-width: 720px) {
+	.index h2:nth-child(1) {
+		margin-top: 0px;
+		padding: 0px 8px;
+	}
 }
 
 .text-left{
@@ -141,14 +151,14 @@ body {
 .boxes {
 	text-align: center;
 	padding-top: 40px;
+	padding: 0px 16px;
 }
 .box {
 	display: inline-block;
-	width: 300px;
+	max-width: 300px;
 	height: 255px;
 	overflow: hidden;
 	text-align: center;
-
 }
 .box p {
 	font-family: Roboto;
@@ -159,6 +169,12 @@ body {
 }
 .box img {
 	float: center;
+}
+@media (orientation: portrait) and (max-width: 480px), (orientation: landscape) and (max-width: 720px) {
+	.box {
+		height: auto;
+		margin-bottom: 20px;
+	}
 }
 
 .add h2 {
@@ -173,10 +189,20 @@ body {
 }
 
 .add {
-	height: 160px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.add a {
+	display: flex;
+	flex-grow: 0;
 }
 
-.add a:nth-child(2) {
+/* .add a:nth-child(2) {
 	float: left;
 	margin-left: 31.1%;
 	margin-top: 32.88px;
@@ -185,7 +211,7 @@ body {
 	float: right;
 	margin-right: 31.1%;
 	margin-top: 22.88px;
-}
+} */
 
 #content{
   padding-bottom: 180px;
@@ -193,13 +219,7 @@ body {
 	flex: 1 0 auto;
 	background-color: #fafafa;
 }
-
-@media (orientation: portrait) and (max-width: 480px) {
-	#content{
-	  padding-bottom: 0;
-	}
-}
-@media (orientation: landscape) and (max-width: 720px) {
+@media (orientation: portrait) and (max-width: 480px), (orientation: landscape) and (max-width: 720px) {
 	#content{
 	  padding-bottom: 0;
 	}
