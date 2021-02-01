@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Events4me</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../../css/fontawesome.all.min.css">
+      <link rel="stylesheet" href="../../css/style.css">
+      <link rel="stylesheet" href="../../css/userListStyle.css">
+  </head>
+  <body>
+    <heder>
+        <div class="top">
+            <a href=""><img src="../../img/Group.png" alt=""></a>
+            <a href="https://apps.apple.com/us/app/%D0%BC%D0%BE%D0%B8-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/id1463771812?l=ru&ls=1"
+               target="_blank"><img src="../../img/appstore2.png" alt='AppStore'></a>
+            <a class="app_icons" href="https://play.google.com/store/apps/details?id=ru.spb.iac.events4me" target="_blank"><img
+                    src="../../img/ggplay.png" alt="GooglePlay"></a>
+        </div>
+        <div class='head'>
+            <!--<img src="./src/banner-main.png" alt="">-->
+            <div class='banner2'></div>
+            <div class="headText">Мои события: конференции и интересные события в Санкт-Петербурге</div>
+        </div>
+        <nav class="navigation userList">
+            <ul>
+                <li><a href="../../profile.html">
+                    <i class="fas fa-address-card"></i>
+                    <span>- Профиль -</span>
+                </a></li>
+                <li><a href="../../events.html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>- Все конференции -</span>
+                </a></li>
+                <li><a href="../card.html">
+                    <i class="fas fa-calendar-day"></i>
+                    <span>- Конференция -</span>
+                </a></li>
+                <li><a href="card/users.html">
+                    <i class="fas fa-users"></i>
+                    <span>- Пользователи -</span>
+                </a></li>
+                <div class="cap"></div>
+                <li><a id="logout-button" class="outLogin" href="../../login.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>- Выход -</span>
+                </a></li>
+            </ul>
+        </nav>
+    </heder>
+    <div id="content">
+        <h2 class="topUserList">Зарегестрированные пользователи</h2>
+
+        <div class='search'>
+
+            <div class="blocks">
+                <div class='input-group'>
+                    <input type="text" class="form-control" id="searchUser" placeholder="Поиск...">
+                    <span class="input-group-btn">
+              <button class="btn btn-search" id="searchBtn" type="button" disabled><i class="fa fa-search fa-fw"></i></button>
+            </span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="userListTable" id="userList">
+            <table id="tableUsers" class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Фамилия</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Отчество</th>
+                    <th scope="col">email</th>
+                    <th scope="col">Отметка о посещении</th>
+                </tr>
+                </thead>
+                <tbody id="userData">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class='usersConteiner'>
+
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="../../js/date.js"></script>
+    <script src="../../js/functions.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../js/userList.js"></script>
+    <script src="../../js/config.js" type="text/javascript"></script>
+    <script src="../../js/API.js" type="text/javascript"></script>
+    <footer>
+        <div class='foot'>
+            <img src="../../img/GroupWhite.png" alt="GroupWhite">
+            <div class='border'></div>
+            <div class='author'>Дизайн,<br> разработка<br> и техническая поддержка ресурса:
+                <div class="iac">IAC Mobile Dev Group</div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
