@@ -1,7 +1,5 @@
-.navigation li:nth-child(3) {
-		position: relative;
-		padding: 14px 21px 15px 22px; 
-		background-color: #EA4101;
+.navigation li:nth-child(4) {
+	background-color: #EA4101;
 }
 
 form {
@@ -14,14 +12,20 @@ form {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 34px;
-	
 	text-align: center;
 }
+@media (orientation: portrait) and (max-width: 480px), (orientation: landscape) and (max-width: 720px) {
+	.login h2 {
+	  margin: 0px 0px 30px 0px;
+	}
+}
+
 .boxForm {
 	display: block;
 	text-align: center;
-	width: 380px;
+	max-width: 380px;
 	margin: 0 auto;
+	padding: 0 16px;
 }
 
 
@@ -30,7 +34,8 @@ form {
 	display: block;
 	box-sizing: border-box;
 	border-radius: 6px;
-	width: 380px;
+	width: 100%;
+	max-width: 380px;
 	height: 50px;
 	margin-bottom: 30px;
 	border: 2px solid #92CBC5;
@@ -68,24 +73,21 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 .saving {
 	text-align: left;
 }
-.login a , span{
+.login a, .login span {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
 	/* or 150% */
-
 	align-items: center;
 	text-decoration-line: underline;
-	
 	/* violet */
-
 	color: #3F4F98;
 }
 .saveMe {
 	display: inline-block;
-	margin-bottom: 0px; 	
+	margin-bottom: 0px;
 }
 .saveMe a{
 	margin-left: 20px;
@@ -98,13 +100,15 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 }
 #save:hover {
 	border: 2px solid #EA4101;
+	transition: all 0.2s linear;
 }
 
 #check:hover, #inputName:hover, #password:hover {
 	border: 2px solid #EA4101;
+	transition: all 0.2s linear;
 }
 #inputName:focus, #password:focus {
-	padding-left: 26.1px; 
+	padding-left: 26.1px;
 	background: white;
 }
 #check:checked {
@@ -138,7 +142,8 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 	font-family: Roboto;
 	font-style: normal;
 	text-align: center;
-	width: 380px;
+	width: 100%;
+	max-width: 380px;
 	margin: 0 auto;
 }
 
@@ -216,4 +221,8 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 }
 .checkbox:hover{
 	border-color: white;
+}
+
+#inputName[class*=input-error], #password[class*=input-error] {
+	border: 2px solid #EA4101;
 }

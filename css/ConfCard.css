@@ -11,10 +11,7 @@ body {
 	float: right;
 	vertical-align: middle;
 }
-.navigation li:nth-child(n) {
-	padding: 14px 22px 14px 22px;
-}
-.navigation li:nth-child(4) {
+.navigation li:nth-child(3) {
 	background-color: #EA4101;
 }
 
@@ -24,7 +21,6 @@ body {
 	font-weight: 300;
 	font-size: 40px;
 	line-height: 50px;
-	/*color: #3F4F98;*/
 	color: #EA4101;
 	text-align: center;
 }
@@ -127,25 +123,8 @@ body {
 	background-color: #ffffff;
 }
 
-@media (max-width: 820px){
-	.headText{
-		font-size: 30px;
-		width: 700px;
-	}
-	.nameConf{
-		font-size: 30px;
-	}
-}
-
-@media (max-width: 670px){
-	.headText{
-		font-size: 26px;
-		width: 530px;
-	}
-}
-
-@media (max-width: 935px) {
-	.navigation li:nth-child(n) {
+@media (max-width: 935px) and (min-width: 600px) {
+	.navigation li:nth-child(n) a {
 		padding: 15px 6px 14px 6px;
 	}
 
@@ -153,4 +132,3 @@ body {
 		font-size: 15px;
 	}
 }
-
