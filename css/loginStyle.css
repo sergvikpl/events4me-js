@@ -222,3 +222,7 @@ input::-webkit-input-placeholder { color: #92CBC5; }
 .checkbox:hover{
 	border-color: white;
 }
+
+#inputName[class*=input-error], #password[class*=input-error] {
+	border: 2px solid #EA4101;
+}
