@@ -1,7 +1,6 @@
 $(document).ready(function () {
     sessionStorage.removeItem('addressConf');
     sessionStorage.removeItem('coords');
-
     // ========================
     $.ajax({
         url: address + '/event/all',
@@ -12,14 +11,10 @@ $(document).ready(function () {
             // console.log(resault);
             resault = resault.response;
             sessionStorage.setItem("conf_list", JSON.stringify(resault));
-
             for (iter in resault) {
-
                 var dateStart = $.format.date(resault[iter].dateStart, "dd MMM yyyy H:mm");
                 var dateEnd = $.format.date(resault[iter].dateEnd, "dd MMM yyyy H:mm");
-
 // Отрисовка части таблицы и заполнение данными
-
                 $('#eventsData').append('<tr class="evBox" id = "' + resault[iter].id + '">' +
                     '<td>' + resault[iter].name + '</td>' +
                     '<td>' + dateStart + ' - ' + dateEnd + '</td>' +
@@ -27,42 +22,29 @@ $(document).ready(function () {
                     '<td>' + resault[iter].organizations[0].name + '<img class="trashConf" onclick="event.stopPropagation()"  src="../img/delete.png" id="' + resault[iter].id + ' " width=20px></td>' +
                     '<td class="timestamp">' + resault[iter].dateStart + '-' + resault[iter].dateEnd + '</td>' +
                     '</tr>');
-
                 gotoEvent();
                 searchConf();
-
             }
-
 // Удаление записи (конференции)
-
             $(".trashConf").click(function () {
                 trashConf(this.id);
             });
-
 //////////////////////////////
-
             $("#todaysConf").click(function (){
                 todaysConf();
             });
-
-
 // Отображение сегодняшних и всех конференций
-
             function todaysConf() {
-
                 if (document.getElementById("todaysConf").innerHTML=="Показать только сегодняшние")
                 {
                     sessionStorage.setItem('sortedTime', true);
                     for (var i = 0; i < ($('#eventsData').children(".evBox").length); i++) {
                         var id = $('#eventsData').children(".evBox")[i].id;
-
                         console.log(($('#eventsData').children(".evBox")[i].children[4].innerText));
-
                         if (!compareDate($('#eventsData').children(".evBox")[i].children[4].innerText))
                             // $('#eventsData').children(".evBox")[i].remove();
                             document.getElementById(""+ id+ "").style.display = "none";
                     }
-
                     document.getElementById("todaysConf").style.color = "#EA4101";
                     document.getElementById("todaysConf").innerHTML = "Показать все";
                     gotoEvent();
@@ -98,7 +80,6 @@ $(document).ready(function () {
             console.log(resault);
         }
     });
-
 })
 
 function searchConf() {
@@ -125,3 +106,17 @@ function gotoEvent() {
         document.location.href = "./events/card.html";
     });
 }
+
+//Scroll top
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    $('#toTop').click(function () {
+        $('body,html').animate({scrollTop: 0}, 800);
+    });
+});
