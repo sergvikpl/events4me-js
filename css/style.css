@@ -49,6 +49,7 @@ body {
 	font-family: Roboto, sans-serif;
 	font-style: normal;
 	font-weight: 300;
+	font-size: 38px;
 	font-size: min(38px, calc(1em + 2vw));
 	color: #FFFFFF;
 	align-items: center;
@@ -112,7 +113,6 @@ body {
 	display: flex;
 	flex-grow: 1;
 }
-
 
 .app_icons {
 	margin-top: 11px;
@@ -202,17 +202,6 @@ body {
 	flex-grow: 0;
 }
 
-/* .add a:nth-child(2) {
-	float: left;
-	margin-left: 31.1%;
-	margin-top: 32.88px;
-}
-.add a:nth-child(3) {
-	float: right;
-	margin-right: 31.1%;
-	margin-top: 22.88px;
-} */
-
 #content{
   padding-bottom: 180px;
   min-height: 100%;
@@ -237,8 +226,9 @@ input, textarea, select{
 }
 
 .foot img{
-	vertical-align: top;
 	display: inline-block;
+	vertical-align: top;
+	height: 100%;
 	margin: 40px 0px 40px 61px;
 }
 .border {
