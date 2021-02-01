@@ -17,7 +17,6 @@ $(document).ready(function () {
 
             for (i in result) {
                 var visit = "";
-                // console.log(result[i].visited);
                 if (result[i].visited === true) {
                     visit = "<img src='../../img/checked.png'/>"
                 } else {
@@ -62,3 +61,19 @@ function searchUsers() {
         }).show();
     });
 }
+
+$('#logout-button').click(function(event) {
+  event.preventDefault();
+  $.ajax({
+    url: address + '/authorization/logout',
+    type: "GET",
+    success: function() {
+      console.log("Success logout");
+      document.location.href = "../../login.html";
+    },
+    error: function() {
+      console.log("Fail logout");
+      document.location.href = "../../login.html";
+    }
+  })
+})

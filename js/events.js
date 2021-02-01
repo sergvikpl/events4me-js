@@ -120,3 +120,19 @@ $(function () {
         $('body,html').animate({scrollTop: 0}, 800);
     });
 });
+
+$('#logout-button').click(function(event) {
+  event.preventDefault();
+  $.ajax({
+    url: address + '/authorization/logout',
+    type: "GET",
+    success: function() {
+      console.log("Success logout");
+      document.location.href = "login.html";
+    },
+    error: function() {
+      console.log("Fail logout");
+      document.location.href = "login.html";
+    }
+  })
+})

@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
-    setCookie('access_token', '', { expires : 0 });
+  setCookie('access_token', '', { expires : 0 });
 
-    $("#inputName").val(getCookie("email"))
+  $("#inputName").val(getCookie("email"))
 
-    $("#but").on("click",function () {
+  $("#but").on("click", function () {
     $("#inputName").removeClass('input-error')
     $("#password").removeClass('input-error')
     var email = document.getElementById('inputName').value;

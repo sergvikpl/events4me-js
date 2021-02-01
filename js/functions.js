@@ -45,7 +45,6 @@ function getUnix(date, time) {
 }
 (function ($, undefined) {
     "use strict";
-
     // use this transport for "binary" data type
     $.ajaxTransport("+binary", function (options, originalOptions, jqXHR) {
         // check for conditions and support for blob / arraybuffer response type
@@ -136,7 +135,7 @@ function checkToken (){
     var now = toTimestamp(new Date());
     return (now<str.exp);
 }
-$('.outLogin').click(function(){
+$('.outLogin').click(function() {
     setCookie('saveMe', false);
 });
 
